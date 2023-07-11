@@ -2,13 +2,14 @@ package RGMCode;
 
 import java.util.Objects;
 
-public class Student {
+public class Student implements Citizen {
 
     private int studentID;
     private String lastName;
     private String firstname;
     private String birthdate;
     private String startYear;
+
 
 
     public Student(int studentID, String lastName, String firstname, String birthdate, String startJahr) {
@@ -18,6 +19,8 @@ public class Student {
         this.birthdate = birthdate;
         this.startYear = startJahr;
     }
+
+
 
     public int getStudentID() {
         return studentID;
@@ -80,5 +83,15 @@ public class Student {
     @Override
     public int hashCode() {
         return Objects.hash(studentID, lastName, firstname, birthdate, startYear);
+    }
+
+    @Override
+    public String getAddress() {
+        return null;
+    }
+
+    @Override
+    public int getIdentityCardNumber() {
+        return 0;
     }
 }

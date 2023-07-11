@@ -44,4 +44,20 @@ public class ComputerScienceStudent extends Student{
     public int hashCode() {
         return Objects.hash(super.hashCode(), programmingLanguage);
     }
+
+    @Override
+    public String getAddress() {
+        String street = "Berlinerring 1, 12345 Berlin";
+        System.out.println(street);
+        return street;
+    }
+
+    @Override
+    public int getIdentityCardNumber() {
+        int idCardNo = 12345;
+        System.out.println(idCardNo);
+        return idCardNo;
+    }
+
 }
+

@@ -43,4 +43,18 @@ public class BiologyStudent extends Student{
     public int hashCode() {
         return Objects.hash(super.hashCode(), tool);
     }
+
+    @Override
+    public String getAddress() {
+        String street = "Hamburgerstraße 123, 54321 München";
+        System.out.println(street);
+        return street;
+    }
+
+    @Override
+    public int getIdentityCardNumber() {
+        int idCardNo = 54321;
+        System.out.println(idCardNo);
+        return idCardNo;
+    }
 }
