@@ -19,13 +19,6 @@ public class BiologyStudent extends Student{
         this.tool = tool;
     }
 
-/*    @Override
-    public String toString() {
-        return "BiologyStudent{" +
-                "tool='" + tool + '\'' +
-                ',' + super.toString();
-    }*/
-
     @Override
     public String toString() {
         return "BiologyStudent{" +
