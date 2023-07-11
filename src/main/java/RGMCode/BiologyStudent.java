@@ -26,6 +26,10 @@ public class BiologyStudent extends Student{
                 ", " + super.toString();
     }
 
+    public void kannSezieren(){
+        System.out.println("BiolodyStudent können Schweineherzen sezieren, ohne das ihm schlecht wird!");
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

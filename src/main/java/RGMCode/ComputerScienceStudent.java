@@ -1,5 +1,6 @@
 package RGMCode;
 
+import javax.sound.midi.Soundbank;
 import java.util.Objects;
 
 public class ComputerScienceStudent extends Student{
@@ -24,6 +25,10 @@ public class ComputerScienceStudent extends Student{
         return "ComputerScienceStudent{" +
                 "programmingLanguage='" + programmingLanguage + '\'' +
                 ", " + super.toString();
+    }
+
+    public void kannCoden(){
+        System.out.println("Der ComputerScienceStudent sollte gut coden können!");
     }
 
     @Override
