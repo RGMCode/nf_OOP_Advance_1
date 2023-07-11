@@ -2,12 +2,12 @@ package RGMCode;
 
 import java.util.Objects;
 
-public class BiologyStudent extends Student{
+public class BiologyStudent extends Student implements Citizen {
 
     private String tool;
 
-    public BiologyStudent(int studentID, String lastName, String firstname, String birthdate, String startJahr, String tool) {
-        super(studentID, lastName, firstname, birthdate, startJahr);
+    public BiologyStudent(int studentID, String lastName, String firstname, String birthdate, String startYear, String addresse, int dentityCardNumber, String tool) {
+        super(studentID, lastName, firstname, birthdate, startYear, addresse, dentityCardNumber);
         this.tool = tool;
     }
 
@@ -57,4 +57,7 @@ public class BiologyStudent extends Student{
         System.out.println(idCardNo);
         return idCardNo;
     }
+
+
+
 }

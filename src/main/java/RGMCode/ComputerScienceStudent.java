@@ -3,12 +3,12 @@ package RGMCode;
 import javax.sound.midi.Soundbank;
 import java.util.Objects;
 
-public class ComputerScienceStudent extends Student{
+public class ComputerScienceStudent extends Student implements Citizen {
 
     private String programmingLanguage;
 
-    public ComputerScienceStudent(int studentID, String lastName, String firstname, String birthdate, String startJahr, String programmingLanguage) {
-        super(studentID, lastName, firstname, birthdate, startJahr);
+    public ComputerScienceStudent(int studentID, String lastName, String firstname, String birthdate, String startYear, String addresse, int dentityCardNumber, String programmingLanguage) {
+        super(studentID, lastName, firstname, birthdate, startYear, addresse, dentityCardNumber);
         this.programmingLanguage = programmingLanguage;
     }
 

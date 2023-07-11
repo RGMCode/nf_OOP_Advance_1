@@ -2,25 +2,26 @@ package RGMCode;
 
 import java.util.Objects;
 
-public class Student implements Citizen {
+public abstract class Student implements Citizen {
 
     private int studentID;
     private String lastName;
     private String firstname;
     private String birthdate;
     private String startYear;
+    private String addresse;
+    private int identityCardNumber;
 
 
-
-    public Student(int studentID, String lastName, String firstname, String birthdate, String startJahr) {
+    public Student(int studentID, String lastName, String firstname, String birthdate, String startYear, String addresse, int identityCardNumber) {
         this.studentID = studentID;
         this.lastName = lastName;
         this.firstname = firstname;
         this.birthdate = birthdate;
-        this.startYear = startJahr;
+        this.startYear = startYear;
+        this.addresse = addresse;
+        this.identityCardNumber = identityCardNumber;
     }
-
-
 
     public int getStudentID() {
         return studentID;
@@ -62,13 +63,30 @@ public class Student implements Citizen {
         this.startYear = startYear;
     }
 
+    public String getAddresse() {
+        return addresse;
+    }
+
+    public void setAddresse(String addresse) {
+        this.addresse = addresse;
+    }
+
+    public void setIdentityCardNumber(int identityCardNumber) {
+        this.identityCardNumber = identityCardNumber;
+    }
+
+
+
     @Override
     public String toString() {
-        return  "studentID=" + studentID +
+        return "Student{" +
+                "studentID=" + studentID +
                 ", lastName='" + lastName + '\'' +
                 ", firstname='" + firstname + '\'' +
                 ", birthdate='" + birthdate + '\'' +
-                ", startJahr='" + startYear + '\'' +
+                ", startYear='" + startYear + '\'' +
+                ", addresse='" + addresse + '\'' +
+                ", dentityCardNumber=" + identityCardNumber +
                 '}';
     }
 
@@ -77,13 +95,15 @@ public class Student implements Citizen {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Student student = (Student) o;
-        return studentID == student.studentID && Objects.equals(lastName, student.lastName) && Objects.equals(firstname, student.firstname) && Objects.equals(birthdate, student.birthdate) && Objects.equals(startYear, student.startYear);
+        return studentID == student.studentID && identityCardNumber == student.identityCardNumber && Objects.equals(lastName, student.lastName) && Objects.equals(firstname, student.firstname) && Objects.equals(birthdate, student.birthdate) && Objects.equals(startYear, student.startYear) && Objects.equals(addresse, student.addresse);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(studentID, lastName, firstname, birthdate, startYear);
+        return Objects.hash(studentID, lastName, firstname, birthdate, startYear, addresse, identityCardNumber);
     }
+
+
 
     @Override
     public String getAddress() {
