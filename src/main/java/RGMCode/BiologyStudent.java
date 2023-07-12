@@ -58,6 +58,10 @@ public class BiologyStudent extends Student implements Citizen {
         return idCardNo;
     }
 
+    @Override
+    public String codingProject() {
+        return null;
+    }
 
 
 }

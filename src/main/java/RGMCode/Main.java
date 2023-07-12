@@ -17,6 +17,13 @@ package RGMCode;
         2. Lasse deine Klassen BiologyStudent und ComputerScienceStudent dieses Interface implementieren.
      */
 
+    /*
+    Aufgabe Abstract Class:
+        1. Mache deine Student Klasse zu einer abstrakten Klasse.
+        2. Füge der Klasse Student eine abstracte Methode hinzu. Lasse diese von deiner ComputerScienceStudent
+           Klasse implementieren.
+    */
+
 public class Main {
     public static void main(String[] args) {
         ComputerScienceStudent cssRene = new ComputerScienceStudent(1,"Mengedoth","René","27.10.1989","2023","Münchner Straße 1, 12345 Büsum", 1, "java");

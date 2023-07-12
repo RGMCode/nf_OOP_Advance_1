@@ -59,5 +59,10 @@ public class ComputerScienceStudent extends Student implements Citizen {
         return idCardNo;
     }
 
+    @Override
+    public String codingProject() {
+        return "Ich liebe coding <3";
+    }
+
 }
 

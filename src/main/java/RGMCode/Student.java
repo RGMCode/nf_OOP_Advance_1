@@ -114,4 +114,7 @@ public abstract class Student implements Citizen {
     public int getIdentityCardNumber() {
         return 0;
     }
+
+    public abstract String codingProject();
+
 }
